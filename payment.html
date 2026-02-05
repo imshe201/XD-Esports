@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | XD ESPORTS</title>
+
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+
+  <body>
+    <div class="payment-wrapper">
+      <!-- HEADER -->
+      <div class="pay-header">
+        <img src="payment-page-logo.png" alt="XD ESPORTS" />
+        <h1>Complete Your Payment</h1>
+        <p>Secure UPI Payment</p>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="pay-summary">
+        <div>
+          <span>Tournament</span>
+          <strong>Battle for Survival – Season 1</strong>
+        </div>
+
+        <div>
+          <span>Entry Fee</span>
+          <strong>₹50</strong>
+        </div>
+
+        <div>
+          <span>Status</span>
+          <strong class="pending">Pending Payment</strong>
+        </div>
+      </div>
+
+      <!-- QR PAYMENT -->
+      <div class="pay-card">
+        <h3>Scan & Pay (Recommended)</h3>
+        <p>Scan using any UPI app</p>
+
+        <img src="upi-qr.png" alt="UPI QR Code" class="qr" />
+
+        <p class="upi-id">UPI ID: <strong>xdesports@upi</strong></p>
+      </div>
+
+      <!-- APP BUTTONS -->
+      <div class="pay-card">
+        <h3>Pay using UPI Apps (Mobile)</h3>
+
+        <div class="upi-buttons">
+          <button data-app="gpay">Google Pay</button>
+          <button data-app="phonepe">PhonePe</button>
+          <button data-app="paytm">Paytm</button>
+        </div>
+
+        <small class="note">
+          ℹ️ On desktop, please use QR or manual UPI transfer.
+        </small>
+      </div>
+
+      <!-- MANUAL -->
+      <div class="pay-card">
+        <h3>Confirm Payment</h3>
+
+        <form id="paymentForm">
+          <input
+            type="text"
+            id="txnId"
+            placeholder="Enter UPI Transaction ID"
+            required
+          />
+
+          <input
+            type="text"
+            id="payerUpi"
+            placeholder="Your UPI ID (optional)"
+          />
+
+          <button type="submit" class="confirm-btn">Confirm Payment</button>
+        </form>
+
+        <p class="verify-note">
+          ⏳ Payments are verified within <strong>24 hours</strong> by admins.
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="payment.js"></script>
+  </body>
+</html>

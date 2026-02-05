@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: #f5f8fc;
+  color: #1f2937;
+}
+
+.payment-wrapper {
+  max-width: 480px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* HEADER */
+.pay-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pay-header img {
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.pay-header h1 {
+  font-size: 22px;
+  margin: 6px 0;
+  color: #1e40af;
+}
+
+/* SUMMARY */
+.pay-summary {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.pay-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pending {
+  color: #d97706;
+}
+
+/* CARD */
+.pay-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.pay-card h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+/* QR */
+.qr {
+  width: 200px;
+  display: block;
+  margin: 14px auto;
+}
+
+.upi-id {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.upi-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.upi-buttons button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upi-buttons button:hover {
+  background: #1d4ed8;
+}
+
+.note {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* FORM */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #15803d;
+}
+
+.verify-note {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #374151;
+}

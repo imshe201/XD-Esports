@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | XD ESPORTS</title>
+
+    <link rel="stylesheet" href="register.css" />
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+
+  <body>
+    <!-- 🔥 HERO HEADER -->
+    <section class="reg-hero">
+      <h1>BATTLE FOR SURVIVAL – SEASON 1</h1>
+      <p class="sub">Total Prize Pool Worth ₹5,000</p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span>Entry Fee</span>
+          <strong>₹50 / Squad</strong>
+        </div>
+
+        <div class="stat slots" id="slotBox">
+          <span>Only</span>
+          <strong id="slotsLeft">150</strong>
+          <small id="slotMessage">Slots available</small>
+        </div>
+      </div>
+
+      <!-- ⏳ COUNTDOWN -->
+      <div class="countdown">
+        <div><span id="d">00</span>Days</div>
+        <div><span id="h">00</span>Hours</div>
+        <div><span id="m">00</span>Min</div>
+        <div><span id="s">00</span>Sec</div>
+      </div>
+    </section>
+
+    <!-- 📝 FORM -->
+    <section class="reg-container">
+      <form id="registrationForm">
+        <h2>Squad Registration</h2>
+
+        <!-- TEAM LEADER -->
+        <div class="card">
+          <h3>Team Leader</h3>
+          <input name="leaderName" required placeholder="Leader Name" />
+          <input name="whatsapp" required placeholder="WhatsApp Number" />
+          <input name="leaderIGN" required placeholder="In-Game Name" />
+          <input name="leaderUID" required placeholder="In-Game UID" />
+        </div>
+
+        <!-- TEAM MEMBERS -->
+        <div class="card">
+          <h3>Team Members</h3>
+          <input name="player2IGN" required placeholder="Player 2 IGN" />
+          <input name="player2UID" required placeholder="Player 2 UID" />
+
+          <input name="player3IGN" required placeholder="Player 3 IGN" />
+          <input name="player3UID" required placeholder="Player 3 UID" />
+
+          <input name="player4IGN" required placeholder="Player 4 IGN" />
+          <input name="player4UID" required placeholder="Player 4 UID" />
+        </div>
+
+        <!-- OPTIONAL SUBSTITUTE -->
+        <div class="card optional">
+          <h3>Optional Substitute</h3>
+          <input name="optionalIGN" placeholder="Substitute IGN (Optional)" />
+          <input name="optionalUID" placeholder="Substitute UID (Optional)" />  
+        </div>
+
+        <!-- AGREEMENTS -->
+        <div class="agreements">
+          <label
+            ><input type="checkbox" required /> I accept tournament rules</label
+          >
+          <label
+            ><input type="checkbox" required /> Entry fee is
+            non-refundable</label
+          >
+          <label
+            ><input type="checkbox" required /> Admin decisions are final</label
+          >
+        </div>
+
+        <!-- PAY -->
+        <button class="pay-btn">PAY ₹50 & CONFIRM SLOT</button>
+      </form>
+    </section>
+
+    <script type="module" src="register.js"></script>
+  </body>
+</html>

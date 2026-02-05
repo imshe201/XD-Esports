@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Pending | XD ESPORTS</title>
+
+    <link rel="stylesheet" href="payment-pending.css" />
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+
+  <body>
+    <div class="pending-wrapper">
+      <img src="payment-page-logo.png" class="logo" />
+
+      <div class="card">
+        <div class="icon">⏳</div>
+
+        <h1>Payment Under Verification</h1>
+
+        <p class="sub">
+          Thank you for registering! Your payment is currently being reviewed by
+          our admin team.
+        </p>
+
+        <div class="details">
+          <div>
+            <span>Tournament</span>
+            <strong id="tournamentName">Battle for Survival – Season 1</strong>
+          </div>
+
+          <div>
+            <span>Amount Paid</span>
+            <strong>₹50</strong>
+          </div>
+
+          <div>
+            <span>Status</span>
+            <strong class="pending">Pending Verification</strong>
+          </div>
+        </div>
+
+        <p class="info">
+          ⏱ Verification usually takes <strong>within 24 hours</strong>. Once
+          approved, your slot will be confirmed automatically.
+        </p>
+
+        <a
+          href="https://wa.me/919999999999?text=Hi%20XD%20ESPORTS,%20I%20have%20submitted%20my%20payment%20for%20the%20tournament."
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          📩 Contact Admin on WhatsApp
+        </a>
+
+        <a id="whatsappPending" class="whatsapp-btn" target="_blank">
+          📲 Get WhatsApp Confirmation
+        </a>
+
+        <a href="index.html" class="home-link"> ← Back to Home </a>
+      </div>
+    </div>
+
+    <script type="module" src="payment-pending.js"></script>
+  </body>
+</html>
