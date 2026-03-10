@@ -5,7 +5,7 @@
 
   /* ================= RESET ================= */
   * {
-    margin: 0;
+    margin: 100;
     padding: 0;
     box-sizing: border-box;
   }
@@ -40,13 +40,13 @@
 
   /* ================= LOGO ================= */
   .nav-left img {
-    height: 95px;
+    height: 950px;
     width: auto;
   }
 
   /* ================= DESKTOP LINKS ================= */
   .nav-links {
-    display: flex;
+    display: block;
     gap: 28px;
   }
 
@@ -885,4 +885,5 @@
 
 
 /* ================= REGISTRATION PAGE ================= */
+
 
