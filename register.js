@@ -48,7 +48,7 @@ loadSlots();
 
 /* ================= COUNTDOWN TIMER ================= */
 
-const targetDate = new Date("February 10, 2026 23:59:59").getTime();
+const targetDate = new Date("May 10, 2026 23:59:59").getTime();
 
 function updateCountdown() {
   const now = Date.now();
