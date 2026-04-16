@@ -139,4 +139,3 @@ function showInfoPopup(message) {
   modalDetails.textContent = message;
   modal.classList.add("show");
 }
-
